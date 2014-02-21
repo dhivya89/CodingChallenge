@@ -1,13 +1,15 @@
 package com.Mesosphere;
 
+import java.util.ArrayList;
+
 public interface ElevatorControlInterface {
 
-	ElevatorStatus getStatus(Integer elevatorId);
+	ArrayList<ElevatorStatus> getStatus();
 
-	void update(Integer elevatorId, Integer fromFloor, Integer toFloor);
-
-	void step();
+	ElevatorStatus update(Integer elevatorId);
 
 	void pickup(Integer elevatorId, Integer fromFloor);
+
+	void step();
 
 }

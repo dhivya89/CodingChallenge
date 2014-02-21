@@ -2,7 +2,8 @@ package com.Mesosphere;
 
 public class ElevatorStatus {
 	
-	private Boolean isIdle;
+	Boolean isIdle;
+	
 	private Integer elevatorId;
 	private Integer toFloor;
 
